@@ -1,30 +1,36 @@
 # Anadolu 1280 — Taht ve Toprak
 
-Tarayıcıda çalışan, tek oyunculu tarih ve strateji oyunu. Oyun sürümü: **0.3.1**.
+**0.3.2 — İtibar ve Nüfuz**
 
 Oyna: https://kaan12290.github.io/anadolu-1280/
 
-Bu yayın, https://kaan-anadolu-1280.ustunhalilkaan.chatgpt.site adresinde
-25 Ekim 2026 tarihinde yayında olan sürümün oyun dosyasını değiştirmeden kullanır.
-Saray görselli ana menü, Devlet Atlası, Saray Defteri, Sefer Masası,
-Tarih ve Hanedan ve Devlet Yolu bu sürümün parçasıdır.
+## İtibarın yeni işlevi
 
-## Yayın
+İtibar 40/60/80/100 düzeylerine çıktığında elçilerin ilişki kazancı artar;
+ittifak için gereken ilişki eşiği düşer. İttifakta iki ülkenin yüksek olan
+itibar bonusu kullanılır.
 
-GitHub Pages kaynağı: `main` dalı, `/(root)` klasörü. `index.html` giriş dosyasıdır.
-Derleme veya paket kurulumu gerekmez; görseller ve oyun kodu HTML içine gömülüdür.
-`.nojekyll` statik dosyaların doğrudan yayımlanmasını sağlar.
+- **Elçi heyeti:** 15 itibar; barıştaki bir ülkeyle en çok +25 ilişki; 6 ay bekleme.
+- **Divan desteği:** 20 itibar; en çok +8 istikrar, +5 meşruiyet ve +5 saray desteği;
+  12 ay bekleme.
+- **Muharebe:** zafer +3, yenilgi −2 itibar.
+- **Şehir:** fetih +8, şehir kaybı −6 itibar.
 
-## Kayıtlar
+Kararlar altın harcamaz. İtibar 0–100 arasında kalır; harcamak diplomatik
+bonusları düşürebilir. İtibar sayısına veya Saray Defteri içindeki
+İtibar ve Nüfuz kararına tıklayarak pencereyi açabilirsin.
 
-Seferler tarayıcıda yerel olarak saklanır. Önceki sürümlerin desteklenen kayıtları
-oyun tarafından dönüştürülür. Başka bir sitedeki kayıtlar yeni adrese otomatik
-aktarılmaz; oyun içinden JSON dışa/içe aktarma kullanılabilir.
+0.3.1 sürümünün saray görselli ana menüsü, haritası ve sefer sistemleri korunur.
+Desteklenen eski kayıtlar yeni sürüme aktarılır. Seferler cihazdaki tarayıcıda
+saklanır; başka bir siteye ait kayıtlar oyun içinden JSON ile taşınabilir.
 
-## Teknik yapı
+## Kaynak ve doğrulama
 
-HTML, CSS, JavaScript, SVG ve gömülü görseller. Sunucu veya hesap gerektirmez.
+`anadolu-1280-source.zip` kaynakları, görselleri, harita verilerini ve testleri içerir.
+Arşivi açıp kaynak klasöründe `npm install`, `npm test`, `npm run build` çalıştırabilirsin.
+57 otomatik kontrol, birleşik uygulama derlemesi ve tarayıcıda karar/kayıt akışı doğrulandı.
 
-Kaynak yayının commit'i: `ef1d3fea5930ddf9acd682e963f12551032523ec`.
-Oyun dosyasının SHA-256 özeti:
-`ac07b6e86f475d4eaae297bf1e53574870fb9faba07e959de058d928e88d23f7`.
+## GitHub Pages
+
+Yayın kaynağı `main`, `/(root)`. Giriş dosyası `index.html`; sunucuda derleme gerekmez.
+`.nojekyll` doğrudan statik yayın sağlar. Gerekli kod ve görseller HTML içine gömülüdür.
