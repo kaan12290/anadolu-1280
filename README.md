@@ -1,27 +1,25 @@
 # Anadolu 1280 — Taht ve Toprak
 
-**v0.4.2 — Şehirler ve Hanedanlar**
+**v0.4.3 — Devlet Yolları ve Geniş Defterler**
 
 Oyna: https://kaan12290.github.io/anadolu-1280/
 
-69 şehir bölgesi, 20 oynanabilir ülke ve Ocak 1280 başlangıcı. Mevcut harita ve parşömen arayüzü korunur. İnternet olmadan da `index.html` açılarak oynanabilir.
+69 şehir bölgesi, 20 oynanabilir ülke ve Ocak 1280 başlangıcı. Harita, şehir konumları ve mevcut parşömen tasarımı korunur. İnternet olmadan `index.html` açılarak oynanabilir.
 
-## Yeni yönetim
+## Görevler ve büyük ekran
 
-Şehri seçip **Şehir yönetimi**ni aç. Her şehrin yöneticisi vardır. Şehir bağlılığı, bey sadakati, hane bütçesi, üst bey ve ferman aynı paneldedir. **Aile ağacı ve evlilik** üzerinden kalıcı kişiler ve varisleri; **Devlet → Hanedan Meclisi** üzerinden talepleri, muhalefeti ve isyanları yönet.
+**Devlet → Görev Ağacı** artık geniş ekranda açılır. Selçuklu, Bizans, İlhanlı, Memlük, Bulgar ve Kilikya için toplam 48 devlete özel görev bulunur. Ticaret, sefer ve iç siyaset dallarında şehir, yol, kale, antlaşma ve sadakat şartları açıkça gösterilir. İlk dal ödülü devlet yolunu belirler; diğer dallar kapanır. Tarihten ayrılan sonuçlar “Alternatif hedef” olarak işaretlenir.
 
-Kültür dönüşümü, hedefi/maliyeti/süresi belli diplomatik güç projesidir. Eski otomatik yüzde kaydırma kaldırıldı. Esir sistemi şimdilik kapalıdır; yaralılar ve iyileşme devam eder. Üst çubuktaki **Diplomasi**, devletler arası ilişki, güven, tehdit ve anlaşmaları gösterir.
+Görev ağacı, ikmal/komuta, ticaret ve tarih sayfaları geniş açılır. Başlıktaki **Küçült / Geniş ekran** düğmesiyle boyut değişir. Şehir yönetimi kompakt kalır. Diğer ülkelerin önceki görevleri korunur.
 
-Yeni 1280 başlangıcında Sinop ve Kastamonu yerel hanedanları kaynaklıdır. Kişisel adı doğrulanmayan diğer yerel yöneticiler açıkça oyun karakteri olarak belirtilir. Topluluk yüzdeleri tarihî nüfus sayımı değildir.
+## Yönetim ve kayıtlar
 
-## Kaynak ve testler
+v0.4.2 şehir yöneticileri, aile ağacı, veraset, kültür projeleri ve üst çubuk diplomasi sistemi devam eder. Esir sistemi kapalıdır. Kayıt anahtarı değişmedi; eski seferlerde alınmış görev ödülleri ve seçilmiş dal korunur. Yeni şartlar henüz alınmamış görevlere uygulanır.
 
-`anadolu-1280-source.zip` okunabilir kod, varlıklar ve testleri; `v0.4.2-history.bundle` geliştirme geçmişini içerir. Kaynak commit `SOURCE-COMMIT.txt` dosyasındadır.
+## Kaynak ve doğrulama
 
-Kaynak klasöründe `npm install`, `npm test`, `npm run build`. Çıktı `dist/index.html`. Ayrıntılı değişiklikler, testler ve kapsam sınırları `V0.4.2-RELEASE.md` / kaynakta `docs/V0.4.2-RELEASE.md` içindedir. Eski sürüm `backup/v0.4.1-before-city-dynasties` dalında korunur.
+`anadolu-1280-source.zip` okunabilir kaynak ve testleri; `v0.4.3-history.bundle` Git geçmişini içerir. Kaynak commit'i `SOURCE-COMMIT.txt` içindedir. Kaynakta `npm install`, `npm test`, `npm run build` çalıştırılır; çıktı `dist/index.html` dosyasıdır.
 
-Kayıtlar cihazda tutulur. Mevcut otomatik kayıt anahtarı korunur; eski seferler yüklemede taşınır. Farklı siteler arasında JSON dışa/içe aktarımı kullanılır. Windows için son ayrı paket v0.4.1'dir; bu yayın web oyununu günceller.
+146 otomatik senaryo kontrolü ve tarayıcı doğrulaması geçti. Kapsam ve sınırlamalar `V0.4.3-RELEASE.md`, test özeti `V0.4.3-TESTS.txt` içindedir. Önceki canlı sürüm `backup/v0.4.2-before-missions` dalında korunur.
 
-## GitHub Pages
-
-Kaynak `main`, `/(root)`, giriş `index.html`. `.nojekyll` statik yayın sağlar. Kod ve görseller tek HTML dosyasına gömülür.
+GitHub Pages kaynağı `main`, `/(root)`, giriş `index.html`. Bu yayın web oyununu günceller; son ayrı Windows paketi v0.4.1'dir.
