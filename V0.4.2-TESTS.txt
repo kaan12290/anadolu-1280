@@ -1,0 +1,148 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> anadolu-1280@0.4.2 test
+> node tests/game-engine.test.cjs && node tests/game-depth.test.cjs && node tests/game-diplomacy.test.cjs && node tests/game-strategy.test.cjs && node tests/game-statecraft.test.cjs && node tests/game-politics.test.cjs && node tests/game-conflict.test.cjs && node tests/game-ui-save.test.cjs && node tests/game-lordship.test.cjs
+
+PASS 20 playable countries, 6 dormant beyliks; all starts and economies valid
+PASS each unit has distinct price, upkeep and recruitment composition
+PASS invalid or foreign recruitment is atomic
+PASS construction takes two months; market and barracks contribute to city and national totals
+PASS capital moves once, swaps exact bonuses and persists with cooldown
+PASS neutral territory blocks marching, alliance or war opens it
+PASS defenders engage a stationary besieger and create replay rounds with unit losses
+PASS battle preview is deterministic and never changes campaign or RNG
+PASS cavalry loses terrain advantage in marsh and mountains; archers gain on hills
+PASS river crossing applies the explicit attack penalty in simulation
+PASS losing side cannot force white peace; rejection keeps war and resources
+PASS compensated peace restores wartime gains and creates an enforced truce
+PASS victor can demand reparations only with sufficient score
+PASS alliances require relations; defensive partner joins a declared war
+PASS monthly reports include war and alliance announcements, even from previous action
+PASS low majority-community loyalty organizes revolt; recognized groups are not intrinsically immune
+PASS recognition, unified government and reconciliation preserve demographic weights
+PASS historical event blocks next month, choice resolves once and is archived
+PASS beylik autonomy transfers only Seljuk-owned claims and pays tribute
+PASS strong Seljuk state survives 1308 with loyal beys on alternate branch
+PASS 1308 fragmentation releases states without taking foreign-owned territory
+PASS rulers follow dated historical succession; sandbox has no mandatory choices
+PASS old schema-1 saves migrate units, capitals, culture and past-event markers
+PASS save import preserves state and rejects fabricated owners, armies, weights and events
+PASS empty armies cannot start battles or mutate the battle counter
+PASS 600 months across 4 countries retain finite valid simulation state and bounded histories
+PASS event choice costs and outcome are included in the same monthly report
+PASS Bapheus choices act on the player country, without controlling another treasury
+28 simulation checks passed
+PASS all countries initialize dynasty, commanders, missions and valid supply
+PASS schema-2 migration preserves a live campaign and adds new systems
+PASS heir choice changes faction support, enforces cooldown and is archived
+PASS weak legitimacy creates a blocking crisis; paid council keeps the ruler
+PASS accepting a claimant creates explicitly fictional alternate rule and persists
+PASS resisting a claimant creates territorial civil war; reconciliation ends it
+PASS dynastic marriage requires diplomacy and creates a defensive alliance
+PASS roads and depots increase city income, supply capacity and resupply
+PASS cut supply consumes stores, causes real losses and reduces combat power
+PASS winter mountain passes delay armies; roads remove the delay
+PASS commander appointments modify power and one commander cannot lead two armies
+PASS tactics and formation affect real round power; reserves enter on round four
+PASS controlled withdrawal ends combat after two rounds and uses smaller pursuit loss
+PASS caravans pay only on arrival, buy replacement cargo and preserve gold ledger
+PASS war blocks a commercial route without inventing delivery income
+PASS island commerce uses existing two-month sea links
+PASS mission rewards are one-time and selecting a branch locks the alternatives
+PASS new save validation rejects invalid supplies, commanders, routes and missions
+18 campaign depth checks passed
+PASS state migration retains the campaign and supplies pairwise defaults without a global reputation dependency
+PASS accepted trade transfers existing gold exactly once, persists and rejects replay
+PASS malformed, unaffordable and duplicate agreements fail without changing the world
+PASS AI counteroffers preserve treasury until accepted and use explicit reverse payment direction
+PASS player counters are evaluated and round limits cannot be bypassed
+PASS nonaggression blocks war; breaking it lowers trust, raises threat and enables a costly declaration
+PASS military access opens an existing neutral route and expiry closes it without adding map regions
+PASS trade customs shift shares of the same caravan gross without inventing delivery income
+PASS fulfilled treaties improve trust once per year; offer expiry and monthly work are idempotent
+PASS AI states send offers to each other and the player; resources stay finite in monthly simulation
+PASS peace counteroffers cannot bypass battle score or create negative gold
+PASS corrupt trust, threats, duplicate IDs and counters are rejected on import
+PASS old production autosave is read without overwriting either save key
+13 diplomacy and migration checks passed
+PASS income quotes are pure, agree with city/nation totals and are bounded at start
+PASS Constantinople and major hubs retain an advantage at equal development
+PASS development, market, road, capital, stability, security and taxes affect one income formula
+PASS war closes affected trading connections; rebellion suspends income and manpower
+PASS monthly snapshot credits income and manpower once before stability changes
+PASS split preserves each troop type, resources, RNG, upkeep, morale and stores
+PASS merge conserves units and weighted morale/stores without duplicating commanders
+PASS repeated partitions and merges never manufacture units, gold or supply
+PASS partial and full disband reduce exact upkeep without refunds or survivors
+PASS invalid selections and repeated stale commands fail atomically
+PASS movement, siege, transport, hostile presence and foreign cities prevent reorganization
+PASS foreign, same, remote and over-limit merge targets are atomic
+PASS army limits and identifier collision are enforced
+PASS pending history and throne crisis cannot be bypassed by army management
+PASS AI uses the same merge, split and disband accounting rules
+PASS terrain guide and combat use identical modifiers; forts favor own infantry and archers
+PASS real v0.3.2 fixture imports without resetting treasury, army, ownership or queues
+PASS reorganized armies survive export/import and continue recruiting once
+PASS halting a winter march clears its delay; imported abandoned delays do not trap an army
+19 strategy stage 1 checks passed
+PASS all 69 cities have a governor without fabricated gold, manpower or units
+PASS one city divides gross gold, manpower and maintenance exactly once
+PASS three-level hierarchy conserves gold and integer manpower across both lords and crown
+PASS levies through a regional lord conserve soldiers and allocate the same existing contingent
+PASS monthly crown and household collection share a single production snapshot
+PASS one regional lord can hold multiple cities without duplicating the displaced household assets
+PASS household recruitment and levies use actual private budgets and preserve unit counts
+PASS household construction is paid once and completes once in the shared building queue
+PASS unified government rejects removed commands and invalid hierarchy changes atomically
+PASS conquest removes foreign fiscal rights and installs exactly one new governor
+PASS corrupt ownership, duplicate title IDs, units and fiscal contracts are rejected
+PASS AI household investments spend the same private treasury and manpower
+12 city fiscal checks passed
+PASS city loyalty changes independently of culture category and demographic weights
+PASS low city allegiance causes civic revolt risk irrespective of majority identity
+PASS appointed succession returns treasury and soldiers once and keeps the city governed
+PASS hereditary succession retains the same title, assets, units and persistent parent edges
+PASS special charters respect their crown or heir clause
+PASS important competing heirs trigger one blocking decision and inheritance transfers once
+PASS crown intervention pays stability, authority and noble loyalty costs and preserves assets
+PASS refusing a demand grows opposition without instant revolt or free soldiers
+PASS dismissed governor retains private assets, claims and a place in internal politics
+PASS new commanders still receive valid political and revolt state
+10 politics and succession checks passed
+PASS battle partitions preserve every starting soldier across four exclusive categories with captives disabled
+PASS preview includes casualty estimates and never mutates campaign, pools, IDs or RNG
+PASS healing transfers wounded to the existing reserve once without recruitment
+PASS disabled captive actions reject atomically and cannot recruit foreign soldiers
+PASS revolt detaches a bounded share of existing troops and keeps the remaining army
+PASS a refused demand creates warning stages; an ultimatum gives time before actual revolt
+PASS mediation and dividing command power can prevent a revolt without manufacturing soldiers
+PASS negotiated rebel settlement returns existing soldiers and clears rebel control once
+PASS rebel combat records losses, disperses survivors and never recruits them
+PASS a Seljuk frontier independence outcome transfers only existing rebel people and money
+PASS prisoners, wounded and warning state persist; corrupt groups and rebel armies are rejected
+11 conflict and disabled-captive checks passed
+PASS current live campaign takes priority over UI preview and older campaign
+PASS old campaign fallback is read-only
+PASS design-preview campaigns never replace a production campaign
+PASS invalid current save is not silently overwritten
+4 UI release save checks passed
+PASS new start seeds verified Sinop and Kastamonu names without asserting invented history elsewhere
+PASS generated governors and heirs have identifiable fictional personal names
+PASS new officeholder families use adult parent age gaps and provide adult marriage candidates
+PASS culture conversion pays the quoted points once and takes its complete duration
+PASS converted accepted culture removes the explicit 20-percent income penalty
+PASS culture conversion pauses on insecurity and resumes without a second charge
+PASS invalid targets, foreign cities and insufficient points reject without mutation
+PASS cancelling culture conversion refunds nothing and conquest cancels the prior owner project
+PASS repeated monthly hook never grants culture points or project progress twice
+PASS adult unrelated hane marriage persists mutual spouses, conserves gold and forbids remarrying
+PASS marriage blocks minors, parents, siblings, self, same-sex pairs and dead people
+PASS registered marriages can produce a child with stable parent edges and no invented troops
+PASS dismissed armed claimant can rebel in a claimed city and negotiation restores the title once
+PASS a genuine v0.4.1 save migrates pending heirs and returns former prisoners exactly once
+PASS malformed person graphs, duplicate IDs, culture projects and hierarchy cycles are rejected
+PASS full person registry assigns a conquered city to an existing local house without duplicating assets
+PASS a historical governor who commands the field army has one political identity and shared loyalty
+PASS a governor commander revolt splits actual field soldiers without adding his army twice
+PASS a dated governor commander death retires the same person and keeps the inherited title and assets
+19 lordship integration checks passed
