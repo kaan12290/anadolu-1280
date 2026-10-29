@@ -1,0 +1,21 @@
+Anadolu 1280 v0.4.3 — doğrulama özeti
+30 Ekim 2026
+
+npm test — PASS, çıkış 0: toplam 146 senaryo kontrolü.
+Önceki regresyonlar: 134; yeni görev kontrolleri: 12.
+Motor testi dört devlet için 600 aylık geçerli durum denetimi içerir.
+
+Gerçek eski kayıt fixture'ı oluşturulduktan sonra:
+node tests/game-missions.test.cjs — PASS, 12/12.
+node tests/game-depth.test.cjs — PASS, 18/18.
+npm run build — PASS; bütün gömülü JavaScript vm.Script ile ayrıştırıldı.
+
+Tarayıcı, yerel preview:
+PASS Selçuklu geniş ağaç, üç sütun ve okunur koşullar.
+PASS root görev ödülü; ikinci kez alma düğmesi devre dışı.
+PASS Küçült/Geniş ekran, sekmeye özel oturum tercihi.
+PASS Ticaret geniş varsayılanı.
+PASS Bizans JSON kayıt yükleme ve farklı görev ağacı.
+PASS 1363 piksel viewport, geniş panel 1315 piksel.
+
+Bu dosya test çalışmasının özetidir; ham konsol dökümü değildir.
