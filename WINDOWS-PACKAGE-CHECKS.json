@@ -1,0 +1,13 @@
+{
+  "version": "0.4.1",
+  "archive": "Anadolu_1280_Windows_0.4.1.zip",
+  "size_bytes": 158931546,
+  "sha256": "c15a1a4492f23c0d4889d5980371922199bb80cc7a5c9298e6d550a1696d8da2",
+  "game_sha256": "72a577daf682d4606bfe5a17369cd16752e39ed565f676497bf461ac1d750fd5",
+  "package_file_hashes_checked": 81,
+  "unchanged_files": 76,
+  "zip_crc": "passed",
+  "executable_format": "PE x86-64",
+  "source_commit": "14e1311f6c6c336a8020893e2de912ef0e7aaabc",
+  "windows_execution_test": "not available on Linux"
+}
