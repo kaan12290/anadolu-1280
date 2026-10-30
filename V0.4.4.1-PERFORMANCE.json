@@ -1,0 +1,89 @@
+{
+  "environment": "Node.js in development container; desktop CPU, not a physical phone benchmark",
+  "codeHashes": {
+    "src/game-engine.js": "3d8631f4abd066f6f37418c2e2920a86e1006aa1d54635d218e2aa99bbba2834",
+    "src/game-characters.js": "fcd44f34cc713596d1fc39629641e084721ae92ea765163e6314c2fd52422b0c",
+    "src/game-lordship.js": "408f825b1f6bebc97cd3e9d8f9886972e39994d2020093b5e937b7968577205e",
+    "src/game-politics.js": "887ae5afa445c83d95b7cf25a640dcfd06486934451fe68bd6c48e067f8ab0de",
+    "source-data/characters-1280.json": "e2de6ddae20e0c352749a9405b75536d3303dc0d731793c2001ba6403e70d37e"
+  },
+  "records": [
+    {
+      "nation": "seljuk",
+      "months": 230,
+      "startingCharacters": 674,
+      "endingCharacters": 1129,
+      "maxCharacters": 1129,
+      "dead": 13,
+      "saveBytes": 1658933,
+      "averageMonthMs": 36.08,
+      "p95MonthMs": 57.95
+    },
+    {
+      "nation": "ilkhan",
+      "months": 240,
+      "startingCharacters": 674,
+      "endingCharacters": 1132,
+      "maxCharacters": 1132,
+      "dead": 13,
+      "saveBytes": 1614763,
+      "averageMonthMs": 29.72,
+      "p95MonthMs": 52.46
+    },
+    {
+      "nation": "byzantine",
+      "months": 240,
+      "startingCharacters": 674,
+      "endingCharacters": 1142,
+      "maxCharacters": 1142,
+      "dead": 13,
+      "saveBytes": 1619001,
+      "averageMonthMs": 30.68,
+      "p95MonthMs": 50.91
+    },
+    {
+      "nation": "mamluk",
+      "months": 240,
+      "startingCharacters": 674,
+      "endingCharacters": 1163,
+      "maxCharacters": 1163,
+      "dead": 13,
+      "saveBytes": 1650830,
+      "averageMonthMs": 31.84,
+      "p95MonthMs": 56.62
+    },
+    {
+      "nation": "cilicia",
+      "months": 186,
+      "startingCharacters": 674,
+      "endingCharacters": 1061,
+      "maxCharacters": 1061,
+      "dead": 12,
+      "saveBytes": 1536650,
+      "averageMonthMs": 30.5,
+      "p95MonthMs": 47.68
+    },
+    {
+      "nation": "bulgaria",
+      "months": 232,
+      "startingCharacters": 674,
+      "endingCharacters": 1124,
+      "maxCharacters": 1124,
+      "dead": 13,
+      "saveBytes": 1586690,
+      "averageMonthMs": 33.06,
+      "p95MonthMs": 52
+    },
+    {
+      "nation": "serbia",
+      "months": 82,
+      "startingCharacters": 674,
+      "endingCharacters": 781,
+      "maxCharacters": 781,
+      "dead": 9,
+      "saveBytes": 1239873,
+      "averageMonthMs": 30.31,
+      "p95MonthMs": 54.23
+    }
+  ]
+}
