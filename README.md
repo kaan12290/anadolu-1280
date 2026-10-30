@@ -1,25 +1,15 @@
-# Anadolu 1280 — Taht ve Toprak
+# Anadolu 1280 — v0.4.4.1 Yaşayan Karakterler
 
-**v0.4.3 — Devlet Yolları ve Geniş Defterler**
+**İnceleme dalı. Canlı v0.4.3'ün yerine yayımlanmadı.**
 
-Oyna: https://kaan12290.github.io/anadolu-1280/
+`index.html` dosyasını açarak çevrimdışı oyna. Kod ve bütün görseller bu dosyaya gömülüdür; hesap, kurulum veya internet gerekmez. Kaynak geliştirme dalı `feature/v0.4.4.1-yasayan-karakterler`.
 
-69 şehir bölgesi, 20 oynanabilir ülke ve Ocak 1280 başlangıcı. Harita, şehir konumları ve mevcut parşömen tasarımı korunur. İnternet olmadan `index.html` açılarak oynanabilir.
+Sarayda hükümdar adına/portresine; şehir yönetiminde beyin adına; Devlet → İkmal ve Komuta'da komutan adına tıkla. **Devlet → Hanedan → Karakter defteri** üzerinden kişiler ve diğer devletler açılır. Kişilik/yetenekler, aile, ilişkiler ve unvanlar sekmeleri çalışır. Evlilik ve veraset defterine profil içinden ulaşılır.
 
-## Görevler ve büyük ekran
+Tek kişi kimliği, mevcut bey/komutan/saray görevlerini bağlar. Hane hazinesi, özel birlik ve sahra ordusu ayrı kaynaklar olarak korunur. v0.4.2 ve v0.4.3 seferleri içe aktarılabilir; görev ödülleri tekrar verilmez. Eski bir kaydı denemeden önce oyunun Kayıt menüsünden dışa aktarmak mümkündür.
 
-**Devlet → Görev Ağacı** artık geniş ekranda açılır. Selçuklu, Bizans, İlhanlı, Memlük, Bulgar ve Kilikya için toplam 48 devlete özel görev bulunur. Ticaret, sefer ve iç siyaset dallarında şehir, yol, kale, antlaşma ve sadakat şartları açıkça gösterilir. İlk dal ödülü devlet yolunu belirler; diğer dallar kapanır. Tarihten ayrılan sonuçlar “Alternatif hedef” olarak işaretlenir.
+Kaynak klasöründe `npm install`, `npm test`, `npm run build`. Derleme `dist/index.html`; uzun sefer ölçümü `node scripts/check-character-performance.cjs`. Dört parçalı oyun sürümünün teknik npm etiketi `0.4.4-characters.1`'dir.
 
-Görev ağacı, ikmal/komuta, ticaret ve tarih sayfaları geniş açılır. Başlıktaki **Küçült / Geniş ekran** düğmesiyle boyut değişir. Şehir yönetimi kompakt kalır. Diğer ülkelerin önceki görevleri korunur.
+Karakter sistemi, veri göçü, değişen dosyalar ve sınırlar: `docs/V0.4.4.1-CHARACTERS.md`. Tarihî dayanaklar: `docs/V0.4.4.1-HISTORY.md`. Test ve performans: `docs/checks/`. Gerçek oyun ekranları: `docs/screenshots/v0441-*.jpg`.
 
-## Yönetim ve kayıtlar
-
-v0.4.2 şehir yöneticileri, aile ağacı, veraset, kültür projeleri ve üst çubuk diplomasi sistemi devam eder. Esir sistemi kapalıdır. Kayıt anahtarı değişmedi; eski seferlerde alınmış görev ödülleri ve seçilmiş dal korunur. Yeni şartlar henüz alınmamış görevlere uygulanır.
-
-## Kaynak ve doğrulama
-
-`anadolu-1280-source.zip` okunabilir kaynak ve testleri; `v0.4.3-history.bundle` Git geçmişini içerir. Kaynak commit'i `SOURCE-COMMIT.txt` içindedir. Kaynakta `npm install`, `npm test`, `npm run build` çalıştırılır; çıktı `dist/index.html` dosyasıdır.
-
-146 otomatik senaryo kontrolü ve tarayıcı doğrulaması geçti. Kapsam ve sınırlamalar `V0.4.3-RELEASE.md`, test özeti `V0.4.3-TESTS.txt` içindedir. Önceki canlı sürüm `backup/v0.4.2-before-missions` dalında korunur.
-
-GitHub Pages kaynağı `main`, `/(root)`, giriş `index.html`. Bu yayın web oyununu günceller; son ayrı Windows paketi v0.4.1'dir.
+Paket resmî v0.4.3 kaynakları üstüne geliştirilmiştir; bağımsız örnek uygulama değildir. Harita ve şehir konumları korunur. Windows çalıştırılabilir paketi yenilenmedi. `main` birleştirmesi ve GitHub Pages yayını ayrıca kullanıcı onayı gerektirir.

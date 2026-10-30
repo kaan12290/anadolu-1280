@@ -1,0 +1,52 @@
+Anadolu 1280 v0.4.4.1 — Test raporu, 30 Ekim 2026
+
+PASS npm test: 170/170 kontrol, 0 başarısız sonuç.
+Önceki 146 regresyon + 24 yeni yaşayan karakter kontrolü.
+Motor paketi dört ülke ile 600 aya kadar sefer içerir; elenen ülkede döngü biter.
+PASS node scripts/check-character-performance.cjs: 7/7 uzun sefer kontrolü.
+PASS npm run build: çevrimdışı HTML üretimi ve gömülü JavaScript ayrıştırması.
+PASS git diff --check.
+PASS harita geometrisi/verisi, senaryo, şehir konumları, ana ekran varlığı,
+     görev tanımları, diplomasi, çatışma ve mali kaynak modülleri temel sürümle aynı.
+
+Masaüstü tarayıcı:
+PASS hükümdar adı → karakter paneli; gerçek kral / kurgu ayrımı.
+PASS bey ve komutan profili; Kastamonu aynı kişi kimliğiyle temsil ediliyor.
+PASS ebeveyn/çocuk kartları arası geçiş, ölü ata kaydı.
+PASS ilişkiler, unvanlar, karakter defteri, kapatıp yeniden açma.
+PASS Komutanlıktan al emri → komutanlık kapanır, Kastamonu beylik unvanı kalır.
+PASS gerçek v0.4.3 fixture içe aktarımı → Mayıs 1280, 2/8 ödül alınmış,
+     ticaret dalı korunmuş; alınmış ödüller devre dışı.
+
+Mobil tarayıcı, gerçek uygulama 390 × 844 iframe viewport:
+PASS panelin açılması, aile kartına geçiş, kapatma ve yeniden açma.
+PASS sayfa clientWidth/scrollWidth = 390/390; karakter içerik = 323/323.
+PASS eski itibar düğmesi computed display:none; üst çubuk üç kaynakla kaldı.
+Bu ölçüm fiziksel Android/iOS cihaz testi değildir.
+
+Tarayıcı konsolunda gözlenen hata mesajları Chrome eklentisinin metadata
+iletimine aitti (chrome-extension://...); uygulama kaynaklı hata gözlenmedi.
+
+Uzun sefer ölçümleri (Node geliştirme konteyneri; fiziksel telefon benchmark'ı değil):
+Ülke | Ay | İlk kişi | Son kişi | Azami kişi | Ölü | JSON bayt | Ortalama ms/ay | p95 ms/ay
+seljuk | 230 | 674 | 1129 | 1129 | 13 | 1658933 | 36.08 | 57.95
+ilkhan | 240 | 674 | 1132 | 1132 | 13 | 1614763 | 29.72 | 52.46
+byzantine | 240 | 674 | 1142 | 1142 | 13 | 1619001 | 30.68 | 50.91
+mamluk | 240 | 674 | 1163 | 1163 | 13 | 1650830 | 31.84 | 56.62
+cilicia | 186 | 674 | 1061 | 1061 | 12 | 1536650 | 30.5 | 47.68
+bulgaria | 232 | 674 | 1124 | 1124 | 13 | 1586690 | 33.06 | 52
+serbia | 82 | 674 | 781 | 781 | 9 | 1239873 | 30.31 | 54.23
+
+Kişi sayısı hiçbir koşuda 6000 sınırına yaklaşmadı; kayıtlar 12 MB sınırının altında.
+Ölü kayıtlar saklandı. İçe/dışa aktarım her 24 ayda kaynak ve kişi bütünlüğüyle sınandı.
+Kod SHA256 değerleri ve ayrıntılı ölçümler v0441-performance.json içindedir.
+
+Geliştirme sırasında yakalanan ve giderilen durumlar:
+- Gereksiz gelir formülü değişikliği ilk regresyonda yakalandı ve geri alındı.
+  İdare etkisi mevcut şehir bağlılığına bağlandı; sabit gelir testi zayıflatılmadı.
+- Yeni valinin eş geçmişindeki tek yönlü önizleme kayıtları uzlaştırıldı.
+- Eski sürümü taklit eden iki fixture yeni alanlardan arındırılarak güncellendi.
+- Performans karşılaştırması, eski yükleyicinin terk edilmiş marchWait değerini
+  sıfırlayan mevcut kuralını hesaba katacak şekilde düzeltildi.
+- Kaynağı yalnız yılı bilen ölüm tarihlerinde uydurma ay gösterilmesi kaldırıldı.
+Son çalışmada açık kalan başarısız test veya engelleyici hata yok.
