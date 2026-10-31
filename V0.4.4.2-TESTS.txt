@@ -1,0 +1,46 @@
+Anadolu 1280 v0.4.4.2 — 31 Ekim 2026
+
+PASS npm test: 198/198, 0 başarısız kontrol.
+  Güncel oynanış/kayıt: 104 (motor 28, diplomasi 13, strateji/ordu 19,
+  görevler 12, kayıt arayüzü 7, sade devlet yönetimi 25).
+  Korunan arşiv regresyonları: 94 (derinlik 18, beylik maliyesi 12,
+  siyaset/veraset 10, çatışma 11, bey entegrasyonu 19, karakter 24).
+  Arşiv testleri legacyManagement:true geliştirme seçeneğindedir;
+  kapalı mekaniklerin normal oyunda etkin olduğu anlamına gelmez.
+
+Yeni testler: 20 başlangıç, kapalı emirlerin atomik reddi, tek üretim,
+tam devlet payı, vergi/güvenlik/şehir bağlılığı, topluluk isyanı,
+gerçek eski kayıt dönüşümü, her birlik türü ve hazine koruması,
+inşaat/kuyruk/kültür/antlaşma/görev devamlılığı, tekrarlı yükleme ve
+tam JSON eşitliği, eski krizlerin kapanması, aile kimliklerinin
+silinmemesi, yaralı/yedek aktarımı, asker kaybetmeden komutan azli,
+askerî yetenekler ve tarihî hükümdar/olay akışı, görev uyumu,
+v0.4.2/v0.4.3 geçişi, fazla insan gücünün silinmemesi, eski bey-komutan
+ölümünde yerel verasetin yeniden başlamaması ve bozuk kayıt reddi.
+
+Uzun sefer: yedi devletle 240 aya kadar; elenen ülkede durur.
+Yeni beyler, doğumlar, siyasi talepler/isyan orduları oluşmadı.
+Kişi defteri 400 altında kaldı; her 24 ayda yükleme ve kaynak bütünlüğü sınandı.
+Bu bir fiziksel telefon performans ölçümü değildir.
+
+PASS npm run build; gömülü JavaScript vm.Script ayrıştırması.
+PASS git diff --check.
+PASS masaüstü yeni oyun, doğrudan şehir defteri ve şehir listesi.
+PASS politika maliyeti: 2.480 → 2.420 altın (tam 60).
+PASS gerçek v0.4.4.1 dosyasının arayüzden içe aktarımı.
+PASS yedek aktarımı: 7.040 + 1.765 = 8.805 asker.
+PASS komutan azli: asker sayısı değişmedi, siyasi panel açılmadı.
+PASS ham yedek indirmesi, eski fixture ile bayt bayt aynı.
+PASS 390 × 844 mobil görünüm: sayfa 390/390, içerik 363/363, panel 370 px.
+Fiziksel Android/iOS cihaz testi yapılmadı.
+
+Yakalanıp düzeltilen sorunlar:
+- Başkent/eski kayıt testleri artık kaldırılmış bey payına göre beklenti
+  kuruyordu; tam devlet payı ve devredilen eski kaynaklar açıkça doğrulandı.
+- Arşivde undefined komutan bağı JSON'da kayboluyordu; null olarak kaydedildi.
+- Dönüşüm bildirimi kancasına log bağımlılığı bağlandı.
+- Arşivdeki eski bey-komutan bağı ölüm/emeklilikte geçersiz olabilirdi;
+  etkin bağ kesildi, eski bağ devir dökümünde korundu.
+- Komuta/görev sekmelerinde üst başlığın eski kalması düzeltildi.
+Son çalışmada açık başarısız test veya engelleyici hata yok.
+Ham günlük: v0442-tests-raw.txt.
