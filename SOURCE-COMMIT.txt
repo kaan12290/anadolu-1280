@@ -1,1 +1,5 @@
-74a1638f54193613bfd201001804c6f6b36c5afd
+Anadolu 1280 v0.4.5.1 — Bilinen Dünya
+Source commit: b64681d55b28b1d814e5d8fcb82a570c09220376
+Source snapshot: anadolu-1280-source.zip
+Entry point: index.html (identical to source dist/index.html)
+Archive omits earlier UI drafts and old release archives.

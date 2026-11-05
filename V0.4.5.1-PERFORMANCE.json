@@ -1,0 +1,9 @@
+{
+  "verification": "identical complete campaign state after every month; only version string excluded",
+  "months": 12,
+  "baselineMeanMs": 141.94,
+  "optimizedMeanMs": 82.8,
+  "note": "Node on this host, not a phone FPS measurement",
+  "mapBytes": 894495,
+  "htmlBytes": 3016671
+}
