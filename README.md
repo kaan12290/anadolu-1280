@@ -1,12 +1,12 @@
 # Anadolu 1280 — Taht ve Toprak
 
-**v0.4.5.1 — Bilinen Dünya**. Avrupa, Asya ve Kuzey Afrika'da Ocak 1280 başlangıçlı tarihî strateji oyunu.
+**v0.4.5.2 — Şehirler ve Atlas**. Avrupa, Asya ve Kuzey Afrika'da Ocak 1280 başlangıçlı tarihî strateji oyunu.
 
 Canlı oyun: https://kaan12290.github.io/anadolu-1280/
 
 91 görünen siyasi alan ve 315 şehir merkezi. Afrika'da yalnız Mağrip ve Mısır gösterilir; Sahra altı ve Amerika haritada yer almaz. Harita 1300 civarı portolan üslubundan esinlenir; siyasi başlangıç 1280 olarak kalır. Ülke sınırları yaklaşık rekonstrüksiyon, şehir çevreleri oyun tasarımıdır.
 
-Şehirler nokta, başkentler küçük elmasla gösterilir. Ülke içi yapay bölme çizgileri kaldırıldı; şehir adları yakınlaştırınca açılır. Harita sürükleme ve aylık ekonomi hesapları hafifletildi. Mevcut hazine, asker ve kayıtlar korunur. Hanedan, yerel bey ve kişisel iç siyaset yönetimi kapalıdır; ekonomi, ticaret, ordu, diplomasi ve şehir yönetimi sürer.
+Bütün şehir işaretleri her yakınlaştırmada görünür. Yakında şehirler ev, başkentler kale çizimleriyle gösterilir. Şehir adları düğmesi Otomatik / Tümü / Kapalı seçenekleri arasında geçer. Ülke içi yapay bölme çizgileri kaldırıldı. Kesintisiz deniz arka planı ve sınırlı kamera, harita dışındaki köşeli boşlukları önler. Harita sürükleme ve aylık ekonomi hesapları hafifletildi. Mevcut hazine, asker ve kayıtlar korunur. Hanedan, yerel bey ve kişisel iç siyaset yönetimi kapalıdır; ekonomi, ticaret, ordu, diplomasi ve şehir yönetimi sürer.
 
 ## Oynama
 
@@ -25,10 +25,10 @@ npm test
 python scripts/check-world-geography.py
 ```
 
-214 başarılı otomatik kontrol, geometri denetimi ve masaüstü/mobil çerçeve kontrolleri. Fiziksel telefonda FPS veya Windows EXE testi yapılmadı; bu sürüm web ve çevrimdışı HTML güncellemesidir.
+216 başarılı otomatik kontrol, geometri denetimi ve masaüstü/mobil çerçeve kontrolleri. Fiziksel telefonda FPS veya Windows EXE testi yapılmadı; bu sürüm web ve çevrimdışı HTML güncellemesidir.
 
 ## Tarihî kaynaklar
 
 Uyarlanmış Cliopatria / Seshat siyasi verileri CC BY 4.0, Natural Earth fizikî coğrafyası kamu malıdır. Başlangıç yılına göre hanedan ve şehir düzeltmeleri araştırma dosyalarında açıklanır. Moğol halef alanlarında kullanılan 1294 geometrileri 1280'in kesin sınırları olarak sunulmaz. Yeni devletler için ayrıntılı gelecek olay zincirleri bu harita güncellemesinin kapsamında değildir.
 
-Son değişiklikler: `docs/V0.4.5.1-BILINEN-DUNYA.md`. Ayrıntılı atlas kaynakları: `docs/V0.4.5-ATLAS.md`, `source-data/world-research/`, `source-data/CLIOPATRIA-LICENSE.md` ve oyun içi Harita kaynakları.
+Son değişiklikler: `docs/V0.4.5.2-ATLAS.md`. Ayrıntılı atlas kaynakları: `docs/V0.4.5-ATLAS.md`, `source-data/world-research/`, `source-data/CLIOPATRIA-LICENSE.md` ve oyun içi Harita kaynakları.

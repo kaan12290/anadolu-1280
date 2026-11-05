@@ -1,5 +1,5 @@
-Anadolu 1280 v0.4.5.1 — Bilinen Dünya
-Source commit: b64681d55b28b1d814e5d8fcb82a570c09220376
+Anadolu 1280 v0.4.5.2 — Şehirler ve Atlas
+Source commit: 39e0746556c5ea3b6efb34b12b79b9ca54c609b8
 Source snapshot: anadolu-1280-source.zip
 Entry point: index.html (identical to source dist/index.html)
 Archive omits earlier UI drafts and old release archives.
